@@ -162,11 +162,11 @@ class MPT():
                 cv2.putText(img, f'{d[4]}', (d[0] - 9, d[1] - 9), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
                 cv2.putText(img, f'{d[4]}', (d[0] - 8, d[1] - 8), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255))
 
-            cv2.imshow('result video', img)
+            # cv2.imshow('result video', img)
 
             # time.sleep(0.03)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+            #     break
 
             if save:
                 cv2.imwrite(osp.join(tmp_write_folder, f'{idx:06d}.png'), img)
